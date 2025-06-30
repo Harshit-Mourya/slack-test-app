@@ -1,0 +1,383 @@
+{
+  "v": 8,
+  "name": "Slack API Assignment",
+  "folders": [],
+  "requests": [
+    {
+      "v": "14",
+      "endpoint": "http://localhost:5000/slack/send",
+      "name": "Send Message",
+      "params": [],
+      "headers": [],
+      "method": "POST",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n  \"text\": \"Hello from backend\"\n}"
+      },
+      "requestVariables": [],
+      "responses": {
+        "Send Message": {
+          "status": "OK",
+          "code": 200,
+          "headers": [
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "content-length",
+              "value": "771"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Mon, 30 Jun 2025 06:57:59 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"303-Dhc8dr4vyDRG06HDPVLmcbeTsy8\""
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            }
+          ],
+          "body": "{\"ok\":true,\"channel\":\"C093LCF66JG\",\"ts\":\"1751266679.743289\",\"message\":{\"user\":\"U093YE62KMX\",\"type\":\"message\",\"ts\":\"1751266679.743289\",\"bot_id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"text\":\"Hello from backend\",\"team\":\"T0935428747\",\"bot_profile\":{\"id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"user_id\":\"U093YE62KMX\",\"name\":\"SlackTestApp\",\"icons\":{\"image_36\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_36.png\",\"image_48\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_48.png\",\"image_72\":\"https://a.slack-edge.com/80588/img/plugins/app/service_72.png\"},\"deleted\":false,\"updated\":1751207407,\"team_id\":\"T0935428747\"},\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"Ih1L\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"text\",\"text\":\"Hello from backend\"}]}]}]}}",
+          "name": "Send Message",
+          "originalRequest": {
+            "v": "5",
+            "method": "POST",
+            "endpoint": "http://localhost:5000/slack/send",
+            "headers": [],
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"text\": \"Hello from backend\"\n}"
+            },
+            "auth": {
+              "authType": "none",
+              "authActive": true
+            },
+            "params": [],
+            "name": "Send Message",
+            "requestVariables": []
+          }
+        }
+      }
+    },
+    {
+      "v": "14",
+      "endpoint": "http://localhost:5000/slack/retrieve",
+      "name": "Retrieve Messages",
+      "params": [],
+      "headers": [],
+      "method": "GET",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {
+        "Retrieve Messages": {
+          "status": "OK",
+          "code": 200,
+          "headers": [
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "content-length",
+              "value": "3890"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Mon, 30 Jun 2025 06:58:28 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"f32-XdCZoK9I78iBEcAC5rGQF98RwRE\""
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            }
+          ],
+          "body": "{\"ok\":true,\"messages\":[{\"user\":\"U093YE62KMX\",\"type\":\"message\",\"ts\":\"1751266679.743289\",\"bot_id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"text\":\"Hello from backend\",\"team\":\"T0935428747\",\"bot_profile\":{\"id\":\"B093YE62AAV\",\"deleted\":false,\"name\":\"SlackTestApp\",\"updated\":1751207407,\"app_id\":\"A093YD40U2D\",\"user_id\":\"U093YE62KMX\",\"icons\":{\"image_36\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_36.png\",\"image_48\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_48.png\",\"image_72\":\"https://a.slack-edge.com/80588/img/plugins/app/service_72.png\"},\"team_id\":\"T0935428747\"},\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"6cCL\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"text\",\"text\":\"Hello from backend\"}]}]}]},{\"subtype\":\"channel_join\",\"user\":\"U093YE62KMX\",\"text\":\"<@U093YE62KMX> has joined the channel\",\"inviter\":\"U0935428B0X\",\"type\":\"message\",\"ts\":\"1751259245.026199\"},{\"user\":\"U093YE62KMX\",\"type\":\"message\",\"ts\":\"1751256465.526129\",\"edited\":{\"user\":\"B093YE62AAV\",\"ts\":\"1751259570.000000\"},\"bot_id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"text\":\"Good Morning: Edited from backend using Slack API!\",\"team\":\"T0935428747\",\"bot_profile\":{\"id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"user_id\":\"U093YE62KMX\",\"name\":\"SlackTestApp\",\"icons\":{\"image_36\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_36.png\",\"image_48\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_48.png\",\"image_72\":\"https://a.slack-edge.com/80588/img/plugins/app/service_72.png\"},\"deleted\":false,\"updated\":1751207407,\"team_id\":\"T0935428747\"},\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"tkeCg\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"text\",\"text\":\"Good Morning: Edited from backend using Slack API!\"}]}]}]},{\"user\":\"U093YE62KMX\",\"type\":\"message\",\"ts\":\"1751208166.629719\",\"bot_id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"text\":\"Hello from Jay using Slack API Test\",\"team\":\"T0935428747\",\"bot_profile\":{\"id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"user_id\":\"U093YE62KMX\",\"name\":\"SlackTestApp\",\"icons\":{\"image_36\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_36.png\",\"image_48\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_48.png\",\"image_72\":\"https://a.slack-edge.com/80588/img/plugins/app/service_72.png\"},\"deleted\":false,\"updated\":1751207407,\"team_id\":\"T0935428747\"},\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"w4Ec\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"text\",\"text\":\"Hello from Jay using Slack API Test\"}]}]}],\"reactions\":[{\"name\":\"slightly_smiling_face\",\"users\":[\"U0935428B0X\"],\"count\":1}]},{\"user\":\"U0935428B0X\",\"type\":\"message\",\"ts\":\"1751208143.364219\",\"client_msg_id\":\"3529013a-d284-48c0-9b09-7293c8db0795\",\"text\":\":wave: Hello, team!\",\"team\":\"T0935428747\",\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"xosxe\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"emoji\",\"name\":\"wave\",\"unicode\":\"1f44b\"},{\"type\":\"text\",\"text\":\" Hello, team!\"}]}]}]},{\"user\":\"U093YE62KMX\",\"type\":\"message\",\"ts\":\"1751207757.768809\",\"bot_id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"text\":\"Hello from Jay using Slack API :dart:\",\"team\":\"T0935428747\",\"bot_profile\":{\"id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"user_id\":\"U093YE62KMX\",\"name\":\"SlackTestApp\",\"icons\":{\"image_36\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_36.png\",\"image_48\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_48.png\",\"image_72\":\"https://a.slack-edge.com/80588/img/plugins/app/service_72.png\"},\"deleted\":false,\"updated\":1751207407,\"team_id\":\"T0935428747\"},\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"dt5\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"text\",\"text\":\"Hello from Jay using Slack API \"},{\"type\":\"emoji\",\"name\":\"dart\",\"unicode\":\"1f3af\"}]}]}]},{\"subtype\":\"channel_join\",\"user\":\"U0935428B0X\",\"text\":\"<@U0935428B0X> has joined the channel\",\"type\":\"message\",\"ts\":\"1751205643.339469\"}],\"has_more\":false,\"pin_count\":0,\"channel_actions_ts\":null,\"channel_actions_count\":0}",
+          "name": "Retrieve Messages",
+          "originalRequest": {
+            "v": "5",
+            "method": "GET",
+            "endpoint": "http://localhost:5000/slack/retrieve",
+            "headers": [],
+            "body": {
+              "contentType": null,
+              "body": null
+            },
+            "auth": {
+              "authType": "none",
+              "authActive": true
+            },
+            "params": [],
+            "name": "Retrieve Messages",
+            "requestVariables": []
+          }
+        }
+      }
+    },
+    {
+      "v": "14",
+      "endpoint": "http://localhost:5000/slack/edit",
+      "name": "Edit Message",
+      "params": [],
+      "headers": [],
+      "method": "POST",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n  \"ts\": \"1751266679.743289\",\n  \"text\": \"Edited message from backend\"\n}\n"
+      },
+      "requestVariables": [],
+      "responses": {
+        "Edit Message": {
+          "status": "OK",
+          "code": 200,
+          "headers": [
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "content-length",
+              "value": "858"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Mon, 30 Jun 2025 06:58:50 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"35a-8GNNz/JtS29R7jJ92pzAQmBi6UI\""
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            }
+          ],
+          "body": "{\"ok\":true,\"channel\":\"C093LCF66JG\",\"ts\":\"1751266679.743289\",\"text\":\"Edited message from backend\",\"message\":{\"user\":\"U093YE62KMX\",\"type\":\"message\",\"edited\":{\"user\":\"B093YE62AAV\",\"ts\":\"1751266730.000000\"},\"bot_id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"text\":\"Edited message from backend\",\"team\":\"T0935428747\",\"bot_profile\":{\"id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"user_id\":\"U093YE62KMX\",\"name\":\"SlackTestApp\",\"icons\":{\"image_36\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_36.png\",\"image_48\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_48.png\",\"image_72\":\"https://a.slack-edge.com/80588/img/plugins/app/service_72.png\"},\"deleted\":false,\"updated\":1751207407,\"team_id\":\"T0935428747\"},\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"ltOo\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"text\",\"text\":\"Edited message from backend\"}]}]}]}}",
+          "name": "Edit Message",
+          "originalRequest": {
+            "v": "5",
+            "method": "POST",
+            "endpoint": "http://localhost:5000/slack/edit",
+            "headers": [],
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"ts\": \"1751266679.743289\",\n  \"text\": \"Edited message from backend\"\n}\n"
+            },
+            "auth": {
+              "authType": "none",
+              "authActive": true
+            },
+            "params": [],
+            "name": "Edit Message",
+            "requestVariables": []
+          }
+        }
+      }
+    },
+    {
+      "v": "14",
+      "endpoint": "http://localhost:5000/slack/delete",
+      "name": "Delete Message",
+      "params": [],
+      "headers": [],
+      "method": "POST",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n  \"ts\": \"1751266679.743289\"\n}\n"
+      },
+      "requestVariables": [],
+      "responses": {
+        "Delete Message": {
+          "status": "OK",
+          "code": 200,
+          "headers": [
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "content-length",
+              "value": "60"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Mon, 30 Jun 2025 07:00:57 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"3c-yvU5a+TuQFkYpqoUX2JsvdGVZWg\""
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            }
+          ],
+          "body": "{\"ok\":true,\"channel\":\"C093LCF66JG\",\"ts\":\"1751266679.743289\"}",
+          "name": "Delete Message",
+          "originalRequest": {
+            "v": "5",
+            "method": "POST",
+            "endpoint": "http://localhost:5000/slack/delete",
+            "headers": [],
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"ts\": \"1751266679.743289\"\n}\n"
+            },
+            "auth": {
+              "authType": "none",
+              "authActive": true
+            },
+            "params": [],
+            "name": "Delete Message",
+            "requestVariables": []
+          }
+        }
+      }
+    },
+    {
+      "v": "14",
+      "endpoint": "http://localhost:5000/slack/schedule",
+      "name": "Schedule Message",
+      "params": [],
+      "headers": [],
+      "method": "POST",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n  \"text\": \"This is a scheduled message\",\n  \"postAt\": 1751286600\n}\n"
+      },
+      "requestVariables": [],
+      "responses": {
+        "Schedule Message": {
+          "status": "OK",
+          "code": 200,
+          "headers": [
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "content-length",
+              "value": "797"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Mon, 30 Jun 2025 07:01:09 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"31d-QVyKD9uMuzNHyRGXJ+BwuceUlmI\""
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            }
+          ],
+          "body": "{\"ok\":true,\"scheduled_message_id\":\"Q0940AYM6PK\",\"channel\":\"C093LCF66JG\",\"post_at\":1751286600,\"message\":{\"user\":\"U093YE62KMX\",\"type\":\"message\",\"bot_id\":\"B093YE62AAV\",\"app_id\":\"A093YD40U2D\",\"text\":\"This is a scheduled message\",\"team\":\"T0935428747\",\"bot_profile\":{\"id\":\"B093YE62AAV\",\"deleted\":false,\"name\":\"SlackTestApp\",\"updated\":1751207407,\"app_id\":\"A093YD40U2D\",\"user_id\":\"U093YE62KMX\",\"icons\":{\"image_36\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_36.png\",\"image_48\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_48.png\",\"image_72\":\"https://a.slack-edge.com/80588/img/plugins/app/service_72.png\"},\"team_id\":\"T0935428747\"},\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"trya\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"text\",\"text\":\"This is a scheduled message\"}]}]}]}}",
+          "name": "Schedule Message",
+          "originalRequest": {
+            "v": "5",
+            "method": "POST",
+            "endpoint": "http://localhost:5000/slack/schedule",
+            "headers": [],
+            "body": {
+              "contentType": "application/json",
+              "body": "{\n  \"text\": \"This is a scheduled message\",\n  \"postAt\": 1751286600\n}\n"
+            },
+            "auth": {
+              "authType": "none",
+              "authActive": true
+            },
+            "params": [],
+            "name": "Schedule Message",
+            "requestVariables": []
+          }
+        }
+      }
+    }
+  ],
+  "headers": [],
+  "auth": {
+    "authType": "none",
+    "authActive": true
+  },
+  "_ref_id": "coll_mciqehwf_d6eb6b57-d37d-4beb-9edf-e124cedcb725"
+}
